@@ -1,16 +1,68 @@
+//- extends layout
+
+//- block content
+//-   .container
+//-     h1 Register Page
+//-     p.lead Say something worthwhile here.
+//-     br
+//-     form(role='form', action="/register",method="post", style='max-width: 300px;')
+//-       .form-group
+//-           input.form-control(type='text', name="username", placeholder='Enter Username')
+//-       .form-group
+//-         input.form-control(type='password', name="password", placeholder='Password')
+//-       button.btn.btn-default(type='submit') Submit
+//-       &nbsp;
+//-       a(href='/')
+//-         button.btn.btn-primary(type="button") Cancel
+
+//- extends layout
+
+//- block content
+//-   .container
+//-     .register-form
+//-       h1.register-title Register Page
+//-       p.lead Say something worthwhile here.
+//-       br
+      
+//-       form(role='form', action="/register", method="post", style='max-width: 300px;')
+//-         .form-group
+//-           label(for="username") Username:
+//-           input.form-control(type='text', name="username", id="username", placeholder='Enter Username')
+//-         .form-group
+//-           label(for="password") Password:
+//-           input.form-control(type='password', name="password", id="password", placeholder='Password')
+        
+//-         button.btn.btn-primary.btn-block(type='submit') Register
+//-         a(href='/', class='btn btn-secondary btn-block mt-2') Cancel
+
+
 extends layout
 
 block content
+  style.
+    body {
+      background: linear-gradient(to bottom right, #EEEEEE, #64CCC5); /* Green gradient */
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
   .container
-    h1 Register Page
-    p.lead Say something worthwhile here.
-    br
-    form(role='form', action="/register",method="post", style='max-width: 300px;')
-      .form-group
-          input.form-control(type='text', name="username", placeholder='Enter Username')
-      .form-group
-        input.form-control(type='password', name="password", placeholder='Password')
-      button.btn.btn-default(type='submit') Submit
-      &nbsp;
-      a(href='/')
-        button.btn.btn-primary(type="button") Cancel
+    .register-form
+      h1.register-title Register
+      //- p.lead Say something worthwhile here.
+      br
+      
+      form(role='form', action="/register", method="post", style='max-width: 300px;')
+        .form-group
+          label(for="username") Username:
+          input.form-control(type='text', name="username", id="username", placeholder='Enter Username')
+        .form-group
+          label(for="password") Password:
+          input.form-control(type='password', name="password", id="password", placeholder='Password')
+        
+        button.btn.btn-primary.btn-block(type='submit') Register
+        a(href='/login', class='btn btn-secondary btn-block mt-2') Have an account? Back to Login Page

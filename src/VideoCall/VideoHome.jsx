@@ -1,5 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Video.css";
+import meet from "../assets/meet.png";
 
 const VideoRoom = () => {
   const [value, setValue] = useState("");
@@ -17,15 +19,24 @@ const VideoRoom = () => {
         alignItems: "center",
         justifyContent: "center",
         height: "100vh",
+        flexDirection: "row",
       }}
     >
-      <input
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-        type="text"
-        placeholder="Enter room code"
-      />
-      <button onClick={handJoinRoom}>Join Room</button>
+      <div>
+        <h2 style={{ marginBottom: "1rem" }}>
+          Enter a Room Id to share with your Mentor.
+        </h2>
+        <input
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          type="text"
+          placeholder="Enter room code"
+        />
+        <button onClick={handJoinRoom}>Join Room</button>
+      </div>
+      <div>
+        <img src={meet} width={500} />
+      </div>
     </section>
   );
 };

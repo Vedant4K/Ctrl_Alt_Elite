@@ -1,6 +1,9 @@
 import "./App.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import logo from "./continuous_improvement_image.jpg";
+import user from "./user.png";
+import man from "./assets/logic.svg";
+// import personalAssistant from "./chatbot.html";
 
 // import user from "../public/user.png";
 
@@ -23,9 +26,13 @@ const App = () => {
   const navigateToLogin = () => {
     window.open("http://localhost:3000");
   };
+
+  const navigateToChatbot = () => {
+    window.open("../chatbot.html", "_blank");
+  };
   return (
     <>
-      <div className="gradient-div">
+      <div className="gradient-div-1">
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
             <img
@@ -35,7 +42,7 @@ const App = () => {
               style={{ marginRight: "8px", borderRadius: "50%" }}
             />
             <a className="navbar-brand" href="#">
-              IMPROVISE
+              ReformEd
             </a>
             <button
               className="navbar-toggler"
@@ -67,7 +74,13 @@ const App = () => {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" onClick={navigateToVideoCall}>
-                    Start a video call
+                    Talk to a Mentor
+                  </a>
+                </li>
+
+                <li className="nav-item">
+                  <a className="nav-link" onClick={navigateToChatbot}>
+                    Chat Assistant
                   </a>
                 </li>
 
@@ -78,29 +91,39 @@ const App = () => {
               </li> */}
               </ul>
             </div>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" onClick={navigateToLogin}>
                 Login & Register
               </a>
-            </li>
-            {/* <img src="user.png" /> */}
+            </li> */}
+            <img src={user} width={40} height={40} />
           </div>
         </nav>
+        <div style={{ display: "flex", gap: "2rem" }}>
+          <div>
+            <img src={man} width={400} height={400} />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+              gap: "0.8rem",
+              height: "100%",
+              marginTop: "70px",
+            }}
+          >
+            {/* <h1 style={{ fontWeight: "600" }}>A New Chapter Awaits.</h1>
+          <h3> Embrace Learning, Empower Change</h3> */}
 
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-            gap: "0.8rem",
-            height: "80%",
-          }}
-        >
-          <h1 style={{ fontWeight: "600" }}>A New Chapter Awaits.</h1>
-          <h3> Embrace Learning, Empower Change</h3>
-          <div className="getting-started" onClick={navigateToSkills}>
-            Get Started
+            <h1 style={{ fontWeight: "600" }}>
+              Acquire skills, read blogs, and seek professional help
+            </h1>
+            <h3>All at one place.</h3>
+            <div className="getting-started" onClick={navigateToSkills}>
+              Upskill Now!
+            </div>
           </div>
         </div>
 

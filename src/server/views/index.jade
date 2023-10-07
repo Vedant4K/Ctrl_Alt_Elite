@@ -1,10 +1,27 @@
+//- extends layout
+
+//- block content
+//-   if (!user)
+//-     a(href="/login") Login
+//-     br
+//-     a(href="/register") Register
+//-   if (user)
+//-     p You are currently logged in as #{user.username}
+//-     a(href='http://localhost:5173/app') Redirect to Home
+//-     a(href="/logout") Logout
+
 extends layout
 
 block content
-  if (!user)
-    a(href="/login") Login
-    br
-    a(href="/register") Register
-  if (user)
-    p You are currently logged in as #{user.username}
-    a(href="/logout") Logout
+  .container
+    if (!user)
+      .auth-links
+        a(href="/login", class="btn btn-primary mb-2") Login
+        br
+        a(href="/register", class="btn btn-secondary") Register
+    if (user)
+      .user-info
+        p.mb-2 You are currently logged in as #{user.username}
+        a(href='http://localhost:5173/app', class="btn btn-success mr-2") Redirect to Home
+        a(href="/logout", class="btn btn-danger") Logout
+

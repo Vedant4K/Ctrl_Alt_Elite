@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-
-.gradient-div {
+html, body {
+    height: 100%;
+}
+.gradient-div-1 {
     width: 100%;
     height: 100vh; /* Adjust the height as needed */
     /* background: linear-gradient(to bottom, #FFFFF0, #FFF5E1);  Replace with your desired gradient colors */
@@ -9,11 +11,25 @@
     /* For example, "to bottom" creates a vertical gradient from top to bottom */
     /* #FF5733 and #FF33FF are just placeholder colors; replace them with your desired colors */
     background: linear-gradient(to bottom, #E3FDFD, #71C9CE); 
+    background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.gradient-div-2 {
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+    /* background: linear-gradient(to bottom, #FFFFF0, #FFF5E1);  Replace with your desired gradient colors */
+    /* You can customize the gradient direction and colors as needed */
+    /* For example, "to bottom" creates a vertical gradient from top to bottom */
+    /* #FF5733 and #FF33FF are just placeholder colors; replace them with your desired colors */
+    background: linear-gradient(to bottom, #E3FDFD, #71C9CE); 
+    background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 body{
     font-family: 'Inter','sans-serif';
-
+    /* height: 100%; */
 }
 
 li{
@@ -30,7 +46,7 @@ li{
 }
 
 .navbar-brand{
-    font-weight: 500 !important;
+    font-weight: 600 !important;
 }
 
 .getting-started{
@@ -54,6 +70,44 @@ li{
 .skills-content{
     padding-inline: 18px;
     padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.card-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-left: 2.2rem;
+    /* margin-bottom: 1rem; */
+}
 
+.card{
+    min-width: 300px !important;
+    max-width: 350px !important;
+    background-color: #58d7cb;
+    color: white;
+    border: 2px solid #4DB6AC;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px; /* Adjust the maximum width of the container */
+    margin: 0 auto;
+  }
+
+  .card-blog {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
