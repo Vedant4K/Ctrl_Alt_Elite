@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "totalResults": 3,
+  "articles": [
+    {
+      "source": { "id": null, "name": "Archinect" },
+      "author": "Josh Niland",
+      "title": "Daniel Libeskind completes senior housing development on Long Island",
+      "description": "Studio Libeskind has shared photos of its recently completed senior housing project on Long Island. Located in the village of Freeport in Nassau County, the new Allan and Geraldine Rosenberg Residence holds a total of 45 units reserved for residents aged 55 a…",
+      "url": "https://archinect.com/news/article/150374585/daniel-libeskind-completes-senior-housing-development-on-long-island",
+      "urlToImage": "https://archinect.imgix.net/uploads/98/98b0b496b2d9c57f51f4bcfb9657bed7.jpg?fit=crop&auto=compress%2Cformat&w=1200",
+      "publishedAt": "2023-09-20T21:59:00Z",
+      "content": "Studio Libeskind has shared photos of its recently completed senior housing project on Long Island.\r\nLocated in the village of Freeport in Nassau County, the new Allan and Geraldine Rosenberg Residen… [+2425 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Peoria Journal Star" },
+      "author": "Cassidy Waigand, Peoria Journal Star",
+      "title": "'A new chapter': Fair trade business will take over longtime shop in Peoria Heights",
+      "description": "Global Village, which closed after just over two decades in business, will be revived as a new fair-trade business.",
+      "url": "https://www.pjstar.com/story/business/2023/09/06/peoria-heights-global-village-space-to-open-as-fair-trade-shop-ten-thousand-villages/70738276007/",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/fV2Zp_.70132FF3UyegBgg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD05MDA-/https://media.zenfs.com/en/journal-star/c8aaf58deeb07a1c6dcb1e659579db6c",
+      "publishedAt": "2023-09-06T10:11:07Z",
+      "content": "Ten Thousand Villages will take the place of Global Village in Peoria Heights. The former store operated for just over two decades before shutting down.\r\nA new fair-trade business is coming to Peoria… [+4373 chars]"
+    },
+    {
+      "source": { "id": null, "name": "Dezeen" },
+      "author": "Ben Dreith",
+      "title": "Studio Libeskind creates social housing block for first New York project",
+      "description": "A sculptural facade defines the Allan & Geraldine Rosenberg Residences, a housing block with affordable senior apartments in Freeport, New York, designed by German architecture firm Studio Libeskind. Located in Freeport on Long Island, north of New York City,…",
+      "url": "https://www.dezeen.com/2023/09/26/studio-libeskind-social-housing-block-new-york/",
+      "urlToImage": "https://static.dezeen.com/uploads/2023/09/libeskind-social-housing-long-island-_dezeen_2364_hero-600x600.jpg",
+      "publishedAt": "2023-09-26T17:00:21Z",
+      "content": "A sculptural facade defines the Allan &amp; Geraldine Rosenberg Residences, a housing block with affordable senior apartments in Freeport, New York, designed by German architecture firm Studio Libesk… [+4190 chars]"
+    }
+  ]
+}
